@@ -12,7 +12,8 @@ namespace Alura.LeilaoOnline.Tests
             EstadoLeilao estadoEsperado = EstadoLeilao.LeilaoAntesDoPregao;
 
             //Act
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
 
             //Assert
             Assert.Equal(estadoEsperado, leilao.Estado);

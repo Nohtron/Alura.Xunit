@@ -10,7 +10,8 @@ namespace Alura.LeilaoOnline.Tests
         public void EstadoDeUmLeilaoIgualLeilaoEmAndamentoDadoUmLeilaoIniciado()
         {
             //Arrange
-            var leilao = new Leilao("Van Gogh");
+            var modalidade = new MaiorValor();
+            var leilao = new Leilao("Van Gogh", modalidade);
             EstadoLeilao estadoEsperado = EstadoLeilao.LeilaoEmAndamento;
 
             //Act
